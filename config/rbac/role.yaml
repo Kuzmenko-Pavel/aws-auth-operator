@@ -1,63 +1,9 @@
-
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-  creationTimestamp: null
   name: manager-role
 rules:
-- apiGroups:
-  - aws-auth.samba.tv
-  resources:
-  - maproles
-  verbs:
-  - create
-  - delete
-  - get
-  - list
-  - patch
-  - update
-  - watch
-- apiGroups:
-  - aws-auth.samba.tv
-  resources:
-  - maproles/finalizers
-  verbs:
-  - update
-- apiGroups:
-  - aws-auth.samba.tv
-  resources:
-  - maproles/status
-  verbs:
-  - get
-  - patch
-  - update
-- apiGroups:
-  - aws-auth.samba.tv
-  resources:
-  - mapusers
-  verbs:
-  - create
-  - delete
-  - get
-  - list
-  - patch
-  - update
-  - watch
-- apiGroups:
-  - aws-auth.samba.tv
-  resources:
-  - mapusers/finalizers
-  verbs:
-  - update
-- apiGroups:
-  - aws-auth.samba.tv
-  resources:
-  - mapusers/status
-  verbs:
-  - get
-  - patch
-  - update
 - apiGroups:
   - ""
   resources:
@@ -76,3 +22,32 @@ rules:
   - get
   - list
   - watch
+- apiGroups:
+  - aws-auth.samba.tv
+  resources:
+  - maproles
+  - mapusers
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - aws-auth.samba.tv
+  resources:
+  - maproles/finalizers
+  - mapusers/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - aws-auth.samba.tv
+  resources:
+  - maproles/status
+  - mapusers/status
+  verbs:
+  - get
+  - patch
+  - update

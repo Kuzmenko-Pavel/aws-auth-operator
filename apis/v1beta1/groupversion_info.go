@@ -15,8 +15,8 @@ limitations under the License.
 */
 
 // Package v1beta1 contains API Schema definitions for the rbac v1beta1 API group
-//+kubebuilder:object:generate=true
-//+groupName=aws-auth.samba.tv
+// +kubebuilder:object:generate=true
+// +groupName=aws-auth.samba.tv
 package v1beta1
 
 import (
