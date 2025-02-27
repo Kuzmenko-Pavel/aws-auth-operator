@@ -2,13 +2,13 @@ apiVersion: v1
 entries:
   aws-auth-operator:
   - apiVersion: v2
-    appVersion: 0.61.5
-    created: "2025-02-27T11:03:21.991408667Z"
+    appVersion: 0.61.6
+    created: "2025-02-27T15:42:28.155993146Z"
     description: Kubernetes operator to declaratively manage the EKS aws-auth configmap
-    digest: bf3eea92a29d00e119cdce440b95b9513f441035be75414372d8b957bdefbd39
+    digest: 6bd1d04f80aadf9190f47d2f3de66a7ea96083f9c9a727c66e97b8bce03b460a
     name: aws-auth-operator
     type: application
     urls:
-    - https://github.com/Kuzmenko-Pavel/aws-auth-operator/releases/download/0.61.5/aws-auth-operator-0.61.5.tgz
-    version: 0.61.5
-generated: "2025-02-27T11:03:21.991417674Z"
+    - https://github.com/Kuzmenko-Pavel/aws-auth-operator/releases/download/0.61.6/aws-auth-operator-0.61.6.tgz
+    version: 0.61.6
+generated: "2025-02-27T15:42:28.155999188Z"
