@@ -3,8 +3,8 @@ name: Publish release
 on:
   push:
     tags:
-      - '0.*'
-      - '1.*'
+      - "0.*"
+      - "1.*"
 
 env:
   REGISTRY: ghcr.io
@@ -22,7 +22,7 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v3
         with:
-          go-version: '1.19.5'
+          go-version: "1.19.5"
 
       - name: Lint app
         run: make lint
@@ -94,6 +94,7 @@ jobs:
               --owner "$owner" \
               --git-repo "$repo" \
               --token "${{ secrets.GITHUB_TOKEN }}" \
+              --skip-existing \
               --release-name-template "{{ .Version }}"
           # update index and push to github pages
           git config user.email "$owner@users.noreply.github.com"
