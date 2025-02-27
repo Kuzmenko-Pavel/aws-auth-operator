@@ -1,6 +1,6 @@
 module github.com/sambatv/aws-auth-operator
 
-go 1.19
+go 1.23.6
 
 require (
 	github.com/go-logr/logr v0.3.0
